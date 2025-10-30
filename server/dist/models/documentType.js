@@ -1,0 +1,56 @@
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+import shortid from "shortid";
+import { ObjectType, Field, ID } from "type-graphql";
+let DocumentType = class DocumentType {
+    id;
+    alumniReceipt;
+    gownReceipt;
+    seetReceipt;
+    certificateReceipt;
+    proceedingsReceipt;
+    /**
+     * Document of payments
+     */
+    constructor(init) {
+        Object.assign(this, init);
+        this.id = shortid();
+    }
+};
+__decorate([
+    Field(type => ID),
+    __metadata("design:type", String)
+], DocumentType.prototype, "id", void 0);
+__decorate([
+    Field(),
+    __metadata("design:type", String)
+], DocumentType.prototype, "alumniReceipt", void 0);
+__decorate([
+    Field(),
+    __metadata("design:type", String)
+], DocumentType.prototype, "gownReceipt", void 0);
+__decorate([
+    Field(),
+    __metadata("design:type", String)
+], DocumentType.prototype, "seetReceipt", void 0);
+__decorate([
+    Field(),
+    __metadata("design:type", String)
+], DocumentType.prototype, "certificateReceipt", void 0);
+__decorate([
+    Field(),
+    __metadata("design:type", String)
+], DocumentType.prototype, "proceedingsReceipt", void 0);
+DocumentType = __decorate([
+    ObjectType(),
+    __metadata("design:paramtypes", [DocumentType])
+], DocumentType);
+export { DocumentType };
+//# sourceMappingURL=documentType.js.map
