@@ -212,15 +212,15 @@
     "eligibilityStatus": true
   },
   {
-    "id": "u769XQnhFi",
+    "id": "y5ktVB7Out",
     "firstName": "nathan",
     "lastName": "",
     "otherName": "ayu",
     "email": "",
     "role": "STUDENT",
     "password": "",
-    "createdAt": "2025-10-30T06:44:49.908Z",
-    "updatedAt": "2025-10-30T06:44:49.908Z",
+    "createdAt": "2025-10-30T15:19:34.598Z",
+    "updatedAt": "2025-10-30T15:19:34.598Z",
     "facultyId": "SESE",
     "departmentId": "EEE",
     "clearanceStatus": false,
