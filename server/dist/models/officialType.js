@@ -32,7 +32,7 @@ __decorate([
 ], OfficialType.prototype, "office", void 0);
 __decorate([
     Field(type => [String]),
-    __metadata("design:type", String)
+    __metadata("design:type", Array)
 ], OfficialType.prototype, "clearedStudentsId", void 0);
 OfficialType = __decorate([
     ObjectType(),
@@ -42,8 +42,7 @@ export { OfficialType };
 let OfficialInputType = class OfficialInputType {
     facultyId;
     departmentId;
-    clearanceStatus;
-    matricNumber;
+    clearanceEligibility;
     eligibilityStatus;
     id;
     firstName;
@@ -72,11 +71,7 @@ __decorate([
 __decorate([
     Field(type => Boolean),
     __metadata("design:type", Boolean)
-], OfficialInputType.prototype, "clearanceStatus", void 0);
-__decorate([
-    Field(type => String),
-    __metadata("design:type", String)
-], OfficialInputType.prototype, "matricNumber", void 0);
+], OfficialInputType.prototype, "clearanceEligibility", void 0);
 __decorate([
     Field(type => Boolean),
     __metadata("design:type", Boolean)

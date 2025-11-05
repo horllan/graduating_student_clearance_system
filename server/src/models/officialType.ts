@@ -15,7 +15,7 @@ export class OfficialType extends UserType {
     office!: string;
 
     @Field(type => [String!])
-    clearedStudentsId!: string
+    clearedStudentsId!: [String]
 
     constructor(init: OfficialType) {
         super(init);
@@ -33,10 +33,7 @@ export class OfficialInputType {
     departmentId!: string;
 
     @Field(type => Boolean)
-    clearanceStatus!: boolean;
-
-    @Field(type => String)
-    matricNumber!: string;
+    clearanceEligibility!: boolean;
 
     @Field(type => Boolean)
     eligibilityStatus!: boolean;
